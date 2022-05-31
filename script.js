@@ -54,8 +54,6 @@ function search() {
     }
 }
 
-loadList("
-https://dummyjson.com/products
-");
+loadList("https://dummyjson.com/products");
 
 
