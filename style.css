@@ -1,16 +1,27 @@
-.item-card {
-border-radius: 25px;
-background: #f5cc8e;
-padding: 20px;
-width: 500px;
-height: fit-content;
-margin: 10px;
 
+.item-card {
+    border-radius: 25px;
+    background: #f5cc8e;
+    background-image: linear-gradient(to bottom right, #fdc777, #f7deba );
+    padding: 20px;
+    width: 500px;
+    box-shadow: 5px 5px 20px#f5cc8ee8;
+    height: fit-content;
+    margin: 20px;
+
+}
+
+.item-card:nth-child(even){
+    background: #dadada;
+    background-image: linear-gradient(to bottom right, #8880fc, #e3ddfc );
+    box-shadow: 5px 5px 20px#a19bfc96;
 }
 
 .item-card li{
-font-size: 20px;
+    font-size: 20px;
 }
+
+
 
 #nameInput {
 background-position: 10px 10px;
