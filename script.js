@@ -4,34 +4,28 @@ fetch(url)
 .then(json => printList(json["products"]));
 }
 function printList(data) {
-const display = document.getElementById("display-items");
+    const display = document.getElementById("display-items");
 
-for (const product of data) {
-var div = document.createElement("div");
-div.innerHTML = createItem(product);
-display.appendChild(div);
+    for (const product of data) {
+        var div = document.createElement("div");
+        div.classList.add("item-card");
+        var title = document.createElement("h2");
+        title.innerHTML = product.title;
+        var detailsList = document.createElement("ul");
+        var detailsKeys = ["description", "price", "rating","stock","brand","category"];
+        for (const key of detailsKeys){
+            var liEle = document.createElement("li");
+            liEle.innerHTML =key.toUpperCase() +": " +product[key];
+            detailsList.appendChild(liEle);
+        }
+        var imgtag = document.createElement("img");
+        imgtag.src = product.images[0];
 
-}
-}
-
-function createItem(product) {
-return (`<div class="item-card">
-<ul>
-<h2> ${ product.title } </h2>
-
-<li> Description: 
-${ product.description }
-</li>
-<li>
-Price: 
-${ product.price }
-</li>
-<li>
-Rating: 
-${ product.rating }
-</li>
-</ul>
-</div>`)
+        div.appendChild(title);
+        div.appendChild(imgtag);
+        div.appendChild(detailsList);
+        display.appendChild(div);
+    }
 }
 
 function search() {
