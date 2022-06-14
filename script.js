@@ -91,7 +91,16 @@ function cartbtnvalue(op) {
     }
     crtbtn.innerText = "CART (" + count + ")";
 }
+function cartpage() {
+cart_display.innerHTML="";
+display.style.display = 'none';
+printCart(cart);
 
+}
+
+function home() {
+display.style.display = '';
+}
 function search() {
     var input, inputuppercase, i, txtValue;
     input = document.getElementById("nameInput");
