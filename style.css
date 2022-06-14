@@ -2,32 +2,84 @@
 .item-card {
     border-radius: 25px;
     background: #f5cc8e;
-    background-image: linear-gradient(to bottom right, #fdc777, #f7deba );
+    background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
     padding: 20px;
     width: 500px;
-    box-shadow: 5px 5px 20px#f5cc8ee8;
+    box-shadow: 5px 5px 20px#b8b8b8e8;
     height: fit-content;
     margin: 20px;
-
 }
 
-.item-card:nth-child(even){
-    background: #dadada;
-    background-image: linear-gradient(to bottom right, #8880fc, #e3ddfc );
-    box-shadow: 5px 5px 20px#a19bfc96;
-}
-
-.item-card li{
+.item-card li {
     font-size: 20px;
+    margin-bottom: 10px;
+    list-style: none;
 }
 
+.btn_atc {
+    background-color: rgb(0, 255, 166);
+    border: transparent;
+    padding: 15px;
+    color: black;
+    font-weight: lighter;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.added {
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 255, 166);
+    box-shadow: 1px 1px 10px rgb(0, 255, 166);
+    font-weight: bold;
+}
+
+.btn_cart {
+    padding: 20px;
+    width: 100px;
+    margin-left: 5px;
+    color: #000000;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 222, 75);
+
+}
+
+.btn_home {
+    padding: 20px;
+    width: 120px;
+    margin-left: 5px;
+    color: #000000;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(75, 219, 255);
+
+}
+
+span{
+    margin-left: 250px;
+    display:inline-flex;
+    font-weight: 100;
+    
+}
+
+img {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+
+}
 
 #nameInput {
-background-position: 10px 10px;
-background-repeat: no-repeat;
-font-size: 16px;
-padding: 12px 20px 12px 40px;
-border: 1px solid #ddd;
-margin-bottom: 12px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid rgb(187, 187, 187);
+    margin: 20px;
 }
