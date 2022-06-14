@@ -2,23 +2,24 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task2 - Load API to custom UI</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Load data using fetch API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<input type="name" id="nameInput" onkeyup="search()" placeholder="Search for names" title="Type in a name"
-autocomplete="off">
+    <input type="name" id="nameInput" onkeyup="search()" placeholder="Search for names" title="Type in a name"
+        autocomplete="off">
+    <button class="btn_home" onclick="home()">HOME</button>
+    <button class="btn_cart" id="cart" count="0" onclick="cartpage()">CART</button>
 
-<div id="display-items">
 
-
-</div>
-
-<script src="script.js"></script>
+    <div id="display-items"></div>
+    <div id="cart-items"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
