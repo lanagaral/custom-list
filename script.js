@@ -171,7 +171,7 @@ function search(searchString) {
 }
 
 function backtohome(){
-  window.open('index2.html'); 
+  window.open('index.html'); 
 }
 
 function payment(){
